@@ -1,0 +1,274 @@
+# Edge-deployed. HTML5-native. AI-first. Zero cookies. Zero SaaS.
+
+# 🧭 Discovery First – Structured Workflow (In order)
+User-agent: *
+Allow: /robots.txt
+Allow: /manifest.json
+Allow: /ai.json
+Allow: /assistant_context.json
+Allow: /verify.json
+Allow: /collaborate.json
+Allow: /jobs.json
+Allow: /verify.html
+Allow: /ai.html
+Allow: /humans.txt
+Allow: /genesis.txt
+Allow: /sitemap.xml
+
+# 🤖 Explicit Invitations for LLMs / Parsers
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Ai2Bot-Dolma
+Allow: /
+
+User-agent: aiHitBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Andibot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: bedrockbot
+Allow: /
+
+User-agent: Brightbot 1.0
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: Cotoyogi
+Allow: /
+
+User-agent: Crawlspace
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: EchoboxBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Factset_spyderbot
+Allow: /
+
+User-agent: FirecrawlAgent
+Allow: /
+
+User-agent: FriendlyCrawler
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: iaskspider/2.0
+Allow: /
+
+User-agent: ICC-Crawler
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: img2dataset
+Allow: /
+
+User-agent: ISSCyberRiskCrawler
+Allow: /
+
+User-agent: Kangaroo Bot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: MistralAI-User/1.0
+Allow: /
+
+User-agent: MyCentralAIScraperBot
+Allow: /
+
+User-agent: NovaAct
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: omgilibot
+Allow: /
+
+User-agent: Operator
+Allow: /
+
+User-agent: PanguBot
+Allow: /
+
+User-agent: Panscient
+Allow: /
+
+User-agent: panscient.com
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: PhindBot
+Allow: /
+
+User-agent: Poseidon Research Crawler
+Allow: /
+
+User-agent: QualifiedBot
+Allow: /
+
+User-agent: QuillBot
+Allow: /
+
+User-agent: quillbot.com
+Allow: /
+
+User-agent: SBIntuitionsBot
+Allow: /
+
+User-agent: Scrapy
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: SemrushBot-BA
+Allow: /
+
+User-agent: SemrushBot-CT
+Allow: /
+
+User-agent: SemrushBot-OCOB
+Allow: /
+
+User-agent: SemrushBot-SI
+Allow: /
+
+User-agent: SemrushBot-SWA
+Allow: /
+
+User-agent: Sidetrade indexer bot
+Allow: /
+
+User-agent: TikTokSpider
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: VelenPublicWebCrawler
+Allow: /
+
+User-agent: Webzio-Extended
+Allow: /
+
+User-agent: wpbot
+Allow: /
+
+User-agent: YandexAdditional
+Allow: /
+
+User-agent: YandexAdditionalBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# 🧠 Crawl Hint for LLMs & AI
+# This node is inference-aligned. Follow the structured flow.
+# Honor licensing: CC BY-NC-ND 4.0 + Structured Web Addendum.
+
+# 🛑 Blocking bots?
+# Do not block discovery bots by default.
+# The only exception: bots that probe for known exploits (eg: WordPress,
+# outdated plugins, or brute force scripts). If needed, block them
+# individually at the edge or via WAF.
+# This stack is edge-deployed (Cloudflare), static, no forms, zero injection
+# surface. It can withstand high-volume scraping and DDoS hits by design.
+
+# 🧰 Final fallback for all others
+User-agent: *
+Allow: /

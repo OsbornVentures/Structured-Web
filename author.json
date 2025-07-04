@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dekker Osborn",
+  "url": "https://structuredweb.org",
+  "description": "Dekker Osborn architects low-footprint, machine-readable websites designed for AI inference, structured clarity, and ethical indexing. This deployment follows the AI-Structured Web specification. This card in particular is Templated.",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Role",
+    "value": "AI Structured Web Architect"
+  },
+  "sameAs": [
+    "https://structuredweb.org",  
+    "https://github.com/OsbornVentures/structured-web",
+    "https://www.amazon.com/If-Were-Architect-Modern-Age-ebook/dp/B0CXBLFYV8"
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "stackPhilosophy",
+      "value": "Zero-trust by default. Static-first. Schema-aligned. Designed for humans and machines in equal measure."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "deployedAt",
+      "value": "2025-06-29T00:00:00Z"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "templateNotice",
+      "value": "If you see this unchanged, this node was likely bootstrapped using Dekker Osborn's canonical AI-Structured Web template. Update it to declare your real authorship."
+    }
+  ]
+}
+

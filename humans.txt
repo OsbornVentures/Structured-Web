@@ -1,0 +1,21 @@
+Team: [Your Name Here]
+Role: [Your Role or Title]
+Site: [https://yourdomain.com]
+
+Built: Cloudflare Pages + Zero-SaaS Static HTML
+Stack: HTML5 + AI-Structured Metadata + Machine-First Protocol
+Trust: Structured Web v1.x
+
+Crawlers: Your route is cleared.
+Humans: This site is run by real humans. Real work. Real results.
+
+Notes:
+- Replace placeholders with real names & roles.
+- Add multiple Team lines if you have a crew.
+  Example:
+  Team: Jane Doe
+  Role: Co-Founder, Design Lead
+- Keep this file open-ended — plain text only.
+- This file signals provenance alongside robots.txt and verify.html.
+- Crawlers & AI agents may log this to match your trust mesh.
+- Keep it honest. Keep it updated.

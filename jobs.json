@@ -1,0 +1,74 @@
+{
+  // =============================================================
+  // ✅ jobs.json — Step 6 Structured Web Job Broadcast Node
+  // -------------------------------------------------------------
+  // What is this?
+  //   - This file declares open or closed JobPosting positions
+  //     in strict Schema.org format.
+  //
+  // Why do this?
+  //   - A well-formed jobs.json lets any 3rd-party job vendor,
+  //     aggregator, or AI agent crawl your node directly.
+  //   - It removes the need to sign up for multiple job boards.
+  //
+  // Open vs Closed:
+  //   - If you are hiring, use a valid future `validThrough` date.
+  //   - If you are NOT hiring, publish anyway but set
+  //     `validThrough` equal to `datePosted` — so crawlers know
+  //     you intentionally closed this posting.
+  //
+  // Never backdate:
+  //   - Do not backdate to last week. Use same-day timestamp if
+  //     you close it on publish. This prevents inference drift.
+  //
+  // Best practice:
+  //   - Keep `applicantLocationRequirements` general (region).
+  //   - Keep `jobLocation` specific (city, region, country).
+  //
+  // Validate:
+  //   https://validator.schema.org
+  //
+  // Future:
+  //   - This pattern enables real-time jobs feeds for 3rd-party
+  //     vendors & bots. One broadcast, infinite rebroadcast.
+  //
+  // =============================================================
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Service Technician — Part-Time (Example City-Based)",
+  "description": "<p>ExampleCo is seeking contract-based help for field service calls, equipment checks, and light repair work. This is ideal for a skilled independent operator or a side gig. Must be dependable and able to work with minimal supervision.</p><ul><li>Previous service or trade experience preferred</li><li>Flexible hours, pay by job or hourly</li><li>Must communicate clearly and show up as promised</li></ul><p>Reach out by email if interested.</p>",
+  "datePosted": "2025-06-08",
+  "employmentType": "CONTRACTOR",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "ExampleCo Field Services",
+    "sameAs": "https://exampleco.com",
+    "logo": "https://exampleco.com/logo.webp"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Example City",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    }
+  },
+    "applicantLocationRequirements": {
+    "@type": "AdministrativeArea",
+    "name": "North Texas Region"
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": {
+      "@type": "QuantitativeValue",
+      "value": 22,
+      "unitText": "HOUR"
+    }
+  },
+  "validThrough": "2025-06-08",
+  "industry": "Field Service, Maintenance, Light Repair",
+  "experienceRequirements": "Trade experience is helpful but not required if reliable.",
+  "qualifications": "No formal degree needed. Bring tools, basic skills, and consistent work ethic."
+}

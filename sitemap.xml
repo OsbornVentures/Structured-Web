@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ============================================================
+       ⚙️ AI-Structured Web Node Sitemap | Canonical Discovery Order
+       Priority: Mirrors robots.txt and true mesh logic.
+       Version: 1.7
+  ============================================================ -->
+
+  <!--  📦 Structured Discovery Workflow (in exact order)  -->
+
+  <!-- robots.txt (low priority) -->
+  <url>
+    <loc>https://yourdomain.com/robots.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.10</priority>
+  </url>
+
+  <!-- Primary machine-facing trust loop -->
+  <url>
+    <loc>https://yourdomain.com/manifest.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/ai.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/assistant_context.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/verify.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/collaborate.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/jobs.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/verify.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/ai.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Cultural & meta anchors -->
+  <url>
+    <loc>https://yourdomain.com/humans.txt</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/genesis.txt</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/author.json</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Sitemap index itself -->
+  <url>
+    <loc>https://yourdomain.com/sitemap.xml</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Root domain -->
+  <url>
+    <loc>https://yourdomain.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.10</priority>
+  </url>
+
+  <!-- Optional placeholder for content slugs (example) -->
+  <url>
+    <loc>https://yourdomain.com/your-slug-here</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,49 @@
+{
+  // =============================================================
+  // ✅ collaborate.json — Step 5 Node Collaboration Signal 
+  // -------------------------------------------------------------
+  // 📡 What is this file?
+  //   - This is an open broadcast handshake.
+  //   - Any Structured Web node, mesh participant, or edge-signal
+  //     operator can drop this file to quietly declare:
+  //     “We’re alive. We see you. Let’s align.”
+  //
+  // ⚙️ How is it used?
+  //   - If you or your bot find this file, the node owner wants
+  //     to hear from other builders, thinkers, or aligned agents.
+  //   - This signal does NOT alter the formal trust mesh by itself —
+  //     it’s just a flag in the dark for cooperative discovery.
+  //   - You *can* wrap this in Cloudflare security rules or event
+  //     triggers that quietly log or trace who looks — to track
+  //     crawlers that get curious.
+  //
+  // 🗂️ Where does it live?
+  //   - Save it as /collaborate.json at the root of your domain.
+  //   - It should contain no sensitive data — just public hints.
+  //
+  // 🫱 What to do if you see it?
+  //   - Note the `activeNode` to see who’s calling.
+  //   - Decode the `manifest` line — it’s a simple riddle:
+  //     “If you get it, contact us. That’s the point.”
+  //   - This section can be cryptic, open-ended, or playful.
+  //
+  // ✅ Good practice:
+  //   - Keep this file short, factual, and human-parsable.
+  //   - Refresh the `timestamp` when you re-signal your node.
+  //   - If you go dark, remove this file to end the handshake.
+  //
+  // 🌐 Example node handshake sequence:
+  //   robots.txt ➜ manifest.json ➜ ai.json ➜ assistant_context.json ➜ verify.json ➜ collaborate.json
+  //   This signal is optional to broadcast, "status": "connected/disconnected", "networkStatus": "inactive/active"
+  //
+  // =============================================================
+
+  "status": "connected",
+  "activeNode": "Your Node Name Here",
+  "acknowledgment": "Email us at example@yourdomain.com",
+  "version": "1.7.0",
+  "manifest": "Contact us if you get it. That's the point.",
+  "originTag": "City.State.Country // Edge-Signal-Node",
+  "timestamp": "2025-06-28T00:00:00Z",
+  "networkStatus": "active"
+}

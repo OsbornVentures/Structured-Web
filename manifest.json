@@ -1,0 +1,38 @@
+{
+  // =============================================================
+  // ✅ manifest.json — Step 1 in the Structured Web Workflow
+  // -------------------------------------------------------------
+  // This file is the INITIAL "eye lock" and public identity handshake
+  // for your zero-trust node.
+  //
+  // Purpose:
+  //   - PWA user agents, pinned devices, and crawlers check this first.
+  //   - It must come AFTER robots.txt is properly configured to allow
+  //     crawling of manifest.json, /ai.json, /ai.html, and /verify.json.
+  //   - The `start_url` should point to your AI handshake root (/ai).
+  //
+  // Alignment:
+  //   - The name, short_name, description, colors must align visually
+  //     with your real Structured Data — but do NOT replicate or mix
+  //     your JSON-LD schema here.
+  //
+  // Rule:
+  //   - DO NOT store custom mesh signals (`meta`, `visibility`) here.
+  //   - DO NOT replicate the full @context block here.
+  //
+  // Validate:
+  //   Use: https://validator.schema.org/ to check this file.
+  //   Look for: ZERO "Unspecified Type" errors, ZERO warnings.
+  //
+  // Required sequence:
+  //   robots.txt ➜ manifest.json (eye lock) ➜ ai.json ➜ assistant_context.html ➜ verify.json (canonical handshake)
+  // =============================================================
+
+  "name": "Your Business Name",
+  "short_name": "YourShortName",
+  "description": "Your clear, short public tagline.",
+  "start_url": "/ai",
+  "display": "standalone",
+  "theme_color": "#0e3d6c",
+  "background_color": "#ffffff"
+}

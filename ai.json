@@ -1,0 +1,88 @@
+{
+  // =============================================================
+  // ✅ Structured Web — AI Node Declaration — STEP 2
+  // -------------------------------------------------------------
+  // This file is your machine-first identity for inference layers.
+  //
+  // REQUIREMENTS:
+  //  - This file MUST exist at `/ai.json`
+  //  - It MUST be 1-to-1 identical with the <script type="application/ld+json">
+  //    block embedded in `/ai.html`
+  //
+  //  WHY STEP 2?:
+  //   1️⃣ Human-facing page: `/` and other routes with local signals.
+  //   2️⃣ AI-facing canonical: `/ai.html` + `/ai.json` for mesh handshake.
+  //
+  //  This is your ZERO-TRUST handshake anchor. 
+  //  It must pass:
+  //   → https://validator.schema.org/
+  //   → https://search.google.com/test/rich-results
+  //
+  // DO:
+  //   ✔ Keep strictly valid Schema.org keys only in "@context".
+  //   ✔ Mirror the same JSON in `/ai.html` exactly.
+  //   ✔ Keep your version & node grade up-to-date.
+  //
+  // DO NOT:
+  //   ❌ Add `meta` or `visibility` or `context-tag` here.
+  //   ❌ Add local `address` or `geo` if this node is mesh-only.
+  //
+  // Use `/verify.json` for optional mesh-specific signals instead.
+  //
+  // =============================================================
+
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "[Your Business Name]",
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/logo.webp",
+  "image": "https://yourdomain.com/banner.webp",
+  "description": "One clear line describing your AI-facing trust node. E.g., 'This is an official AI-Structured Web declaration for [Your Business], proving compliance with zero-trust mesh rules and policy-first alignment.'",
+  "sameAs": [
+    "https://www.facebook.com/YourPage",
+    "https://www.yelp.com/biz/your-business",
+    "https://yourparentcompany.com"
+  ],
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "name": "Structured Web Version",
+      "value": "1.8"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Node Grade",
+      "value": "A+"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Zero-Trust Mesh Alignment",
+      "value": "Compliant"
+    }
+  ]
+}
+
+//
+// =============================================================
+// ✅ OPTIONAL: MESH-SPECIFIC KEYS → NOT HERE
+// -------------------------------------------------------------
+// If you need to expose inference signals (like `meta`, `curated_for`,
+// `visibility`), do it in `/verify.json` or `/mesh.json`.
+// Example:
+// {
+//   "meta": {
+//     "curated_for": ["LLMs", "Voice Agents"],
+//     "structure_grade": "A+",
+//     "inference_priority": "high",
+//     "version": "1.8"
+//   },
+//   "visibility": "machine"
+// }
+//
+// DO NOT put these inside "@context".
+// =============================================================
+//
+// ✅ Always validate after edits — tiny syntax errors break the loop.
+// ✅ Keep your mirrors in `/ai.html` and `/ai.json` identical.
+// ✅ Update the version and node-grade when you improve the mesh.
+//

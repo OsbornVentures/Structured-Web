@@ -1,0 +1,303 @@
+<!--
+.---. .              .                .  ,.   ,   ,.   .  
+\___  |- ,-. . . ,-. |- . . ,-. ,-. ,-|  `|  /|  / ,-. |-.
+    \ |  |   | | |   |  | | |   |-' | |   | / | /  |-' | |
+`---' `' '   `-' `-' `' `-' '   `-' `-'   `'  `'   `-' `-'
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- [Page Name] | [Business Name] | Local SEO & LLM-Aware -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Required Title -->
+  <title>[Page Title] | [Business Name]</title>
+
+  <!-- Human-Readable SEO Meta -->
+  <meta name="description" content="[Clear description of this page’s purpose and value. Replace this.]">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="keywords" content="[service keywords, location, specialty terms]">
+  <meta name="author" content="[Your Name or Company Name]">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourdomain.com/[slug]">
+
+  <!-- AI / LLM Metadata -->
+  <meta name="inference-priority" content="[essential | critical | routine]">
+  <meta name="ai-surface" content="[Brief AI summary of this page’s structured purpose]">
+  <meta name="llm-node" content="[node.namespace.page]">
+  <meta name="ai-purpose" content="[Purpose: discovery, voice search, policy, or service escalation]">
+  <meta name="structured-version" content="1.8">
+  <meta name="node-grade" content="A+">
+  <meta name="visibility" content="machine">
+  <meta name="context-tag" content="[Business Name | Page Context | Node Purpose]">
+
+  <!-- Geotargeting (optional but recommended) -->
+  <meta name="geo.region" content="US-[STATE CODE]">
+  <meta name="geo.placename" content="[City, State]">
+  <meta name="geo.position" content="[LAT];[LON]">
+  <meta name="ICBM" content="[LAT], [LON]">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="[Page Title | Shortened if needed]">
+  <meta property="og:description" content="[Same as meta description or condensed version]">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/[slug]">
+  <meta property="og:image" content="https://yourdomain.com/[banner-or-thumbnail].webp">
+  
+  <!--
+=======================================================================
+✅ Structured Data Primary Block — Required for Home Page
+-----------------------------------------------------------------------
+This block MUST appear on the homepage to ensure machine parsing and
+trust mesh verification.
+
+Key rules:
+- Always include `isPartOf` pointing to both:
+   1) https://structuredweb.org/verify  (canonical trust declaration)
+   2) https://structuredweb.org/mesh     (mesh registry anchor)
+
+- This block defines your core identity for search engines and AI agents.
+  Keep it precise, valid, and regularly tested:
+    → https://validator.schema.org/
+    → https://search.google.com/test/rich-results
+
+- Good structured data hygiene improves your indexing, eligibility for
+  Google products, and trusted placement in voice and AI results.
+
+- If your business has a local presence AND sells physical products,
+  create a dedicated /products page in your navigation and expose every
+  item with valid Product schema. This enables direct sales through
+  Google alone — often outranking large marketplaces like eBay or Shopify.
+  You can also declare your other sales channels under `sameAs` or
+  `isPartOf` for maximum authority.
+
+Keep it machine-first, zero-warnings, and self-verifiable.
+When in doubt: validate, verify, publish.
+
+---
+Some form of structured Data is required for all .html and .json pages.
+If you are not using this template, please ensure you have a valid one.
+
+=======================================================================
+-->
+
+<!--Website + Local Business-->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://yourdomain.com/#website",
+      "url": "https://yourdomain.com",
+      "name": "Business Name",
+      "isPartOf": [
+        {
+          "@type": "WebSite",
+          "url": "https://structuredweb.org/verify"
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://structuredweb.org/mesh"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "Business Name",
+      "url": "https://yourdomain.com",
+      "image": "https://yourdomain.com/image.webp",
+      "priceRange": "$$",
+      "telephone": "+1-000-000-0000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Example St.",
+        "addressLocality": "Your City",
+        "addressRegion": "ST",
+        "postalCode": "00000",
+        "addressCountry": "US"
+      },
+      "hasMap": "https://maps.app.goo.gl/yourlocation",
+      "mainEntityOfPage": {
+        "@id": "https://yourdomain.com/#website"
+      }
+    }
+  ]
+}
+</script>
+<!-- Agency. Or Parent Corporation  Delete one of these ld=json blocks.(org+org)-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "[Your Business Name]",
+      "alternateName": "[Short Alt Name]",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/logo.png",
+      "foundingDate": "2023-01-01",
+      "founder": {
+        "@type": "Person",
+        "name": "[Founder Name]"
+      },
+      "description": "[One clear line describing your core mission or alignment.]",
+      "sameAs": [
+        "https://github.com/[your-handle]",
+        "https://www.linkedin.com/company/[your-handle]/",
+        "https://structuredweb.org/verify"
+      ],
+      "department": [
+        {
+          "@type": "Organization",
+          "name": "[Sub Brand or Department 1]",
+          "url": "https://subdomain.yourdomain.com",
+          "description": "[Short description]"
+        },
+        {
+          "@type": "Organization",
+          "name": "[Sub Brand or Department 2]",
+          "url": "https://subdomain.yourdomain.com",
+          "description": "[Short description]"
+        }
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "StructuredWeb.org",
+      "url": "https://structuredweb.org",
+      "sameAs": [
+        "https://structuredweb.org/verify",
+        "https://structuredweb.org/mesh"
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box }
+    body { font-family: system-ui, sans-serif; background: #f9f9f9; color: #333; }
+    header { background: #333; color: #fff; padding: 1rem; position: sticky; top: 0; }
+    header nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    header a, footer a { color: #fff; text-decoration: none; font-weight: 500; padding: 0.5rem; }
+    .hero { padding: 3rem 1rem; text-align: center; background: #fff; }
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 2rem; }
+    .cta { background: #28a745; color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .cta:hover { background: #218838; }
+    .cta.secondary { background: #0056b3; }
+    .section { padding: 2rem 1rem; max-width: 960px; margin: auto; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    .card h3 { margin-bottom: 0.5rem; font-size: 1.2rem; }
+    footer { background: #333; color: #fff; padding: 2rem 1rem; margin-top: 3rem; text-align: center; }
+    .cta-stack { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+  <nav aria-label="Primary Navigation">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/gallery">Gallery</a>
+    <a href="/quote">Quote</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<!--
+=========================================================================
+✅ Semantic Alignment — Critical Best Practice
+-------------------------------------------------------------------------
+Always ensure your visible HTML content aligns with your declared
+structured data and microdata claims.
+
+Why this matters:
+- The mesh runs semantic diff checks comparing page keywords with your
+  JSON-LD and microdata. This preserves trust and prevents drift.
+- Search engines and AI agents index these signals. Misalignment
+  reduces your discoverability and weakens trust classification.
+
+Maintenance:
+- Structured keywords should match real text, headings, and link anchors.
+- Keep your navigation, headings, and copy updated alongside schema changes.
+- Our RSS or changelog feeds will announce new rules and best practice updates.
+  Subscribe and verify regularly.
+
+Alignment = Authority. Stay clean, stay indexed.
+
+=========================================================================
+-->
+
+
+    <section class="hero">
+      <h1>Generic Business Headline</h1>
+      <p>Use this section to describe your company, location, or services. This is placeholder text.</p>
+      <a class="cta" href="tel:+10000000000">Call Now</a>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="card">
+          <h3><a href="/service1" style="text-decoration: none; color: inherit;">Service One</a></h3>
+          <p>Short description of service one.</p>
+        </div>
+        <div class="card">
+          <h3><a href="/service2" style="text-decoration: none; color: inherit;">Service Two</a></h3>
+          <p>Short description of service two.</p>
+        </div>
+        <div class="card">
+          <h3><a href="/service3" style="text-decoration: none; color: inherit;">Service Three</a></h3>
+          <p>Short description of service three.</p>
+        </div>
+        <div class="card">
+          <h3><a href="/service4" style="text-decoration: none; color: inherit;">Service Four</a></h3>
+          <p>Short description of service four.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="section" style="text-align: center;">
+      <h2>Request a Quote</h2>
+      <div class="cta-stack">
+        <a class="cta" href="/quote">Get Estimate</a>
+        <a class="cta secondary" href="/financing">Financing Options</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section" style="text-align: center;">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
+      <p>Phone: (000) 000-0000</p>
+      <p>Service Area: Generic City & Region</p>
+    </section>
+
+    <footer>
+  <p>&copy; 2025 Generic Company</p>
+  <nav aria-label="Footer Navigation">
+    <a href="/service1">Service 1</a>
+    <a href="/service2">Service 2</a>
+    <a href="/service3">Service 3</a>
+    <a href="/gallery">Gallery</a>
+    <a href="/quote">Quote</a>
+    <a href="/financing">Financing</a>
+    <a href="/contact">Contact</a>
+    <a href="/faqs">FAQs</a>
+    <a href="/terms">Terms</a>
+    <a href="/privacy">Privacy</a>
+  </nav>
+</footer>
+  </main>
+</body>
+</html>

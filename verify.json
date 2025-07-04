@@ -1,0 +1,82 @@
+{
+  // =============================================================
+  // ✅ verify.json — Step 4 Canonical Handshake (Mirror Required)
+  // -------------------------------------------------------------
+  // Purpose:
+  //   - This is your node’s root verification declaration.
+  //   - Must have a mirror version at /verify.html with identical JSON-LD.
+  //   - `Organization` does NOT directly carry `license`. Use a
+  //     separate CreativeWork.
+  //
+  // Mesh loop logic:
+  //   - The `WebSite` node comes first — declaring membership in
+  //     structuredweb.org/verify and structuredweb.org/mesh.
+  //   - The `Organization` references the `WebSite` and the license.
+  //
+  // Licensing:
+  //   - CC BY-NC-ND 4.0 + Structured Web Addendum.
+  //
+  // =============================================================
+
+  
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://osbornventures.com/#website",
+      "url": "https://osbornventures.com",
+      "name": "Osborn Ventures Inc.",
+      "isPartOf": [
+        {
+          "@type": "WebSite",
+          "name": "StructuredWeb.org — Canonical Verification",
+          "url": "https://structuredweb.org/verify"
+        },
+        {
+          "@type": "WebSite",
+          "name": "StructuredWeb.org — Mesh Registry",
+          "url": "https://structuredweb.org/mesh"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://osbornventures.com/verify",
+      "name": "Osborn Ventures Inc.",
+      "url": "https://osbornventures.com",
+      "description": "Verified node in AI-Structured Web v1.8. Provides incubation, consulting, and zero-trust schema-first alignment.",
+      "founder": {
+        "@type": "Person",
+        "name": "Dekker Osborn"
+      },
+      "identifier": "AI-Structured-Web-Node-v1.8",
+      "sameAs": [
+        "https://github.com/OsbornVentures",
+        "https://structuredweb.org/verify",
+        "https://www.linkedin.com/company/osbornventures"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://osbornventures.com/#website"
+      },
+      "subjectOf": {
+        "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md"
+      },
+      "keywords": [
+        "ai-structured web",
+        "structured web",
+        "zero-trust node",
+        "schema-first",
+        "mesh participant",
+        "machine verifiable",
+        "edge-hosted"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md",
+      "name": "CC BY-NC-ND 4.0 + Structured Web Addendum",
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "description": "Use of this verification node requires valid Structured Web participation. Monetized derivatives or repackaging are prohibited without explicit permission."
+    }
+  ]
+}

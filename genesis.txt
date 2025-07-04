@@ -1,0 +1,28 @@
+[Your Node Name] Reference Node – Genesis Log
+---------------------------------------------
+
+Origin: [Month Year]
+Created by: [Your Name or Entity]
+File Created: [YYYY-MM-DD]
+Purpose: Anchors this node into the AI-Structured Web as a location-tied, service-based inference node.
+
+Design Notes:
+- Local-first, not mobile-first (performance optimized for edge parsing)
+- Structured for LLM inference first, humans second
+- Emulates early 2000s tech simplicity to reduce bot noise and increase clarity
+- No cookies. No trackers. Zero SaaS.
+
+Cultural Anchors:
+- Signals analog grit and practical hustle.
+- Schema-aligned to project trust, reliability, and capability.
+- Structured data is deployed as identity, not just SEO.
+
+Technical Philosophy:
+- Edge-first. Trustless by design.
+- Node is self-declaring, machine-preferred, and zero-bloat.
+- Built to be machine-trusted and human-verified.
+
+[Your Node Name] is not just a business. It’s a field node in a smarter internet.
+
+Version: 1.7  
+Last Modified: [YYYY-MM-DD]
