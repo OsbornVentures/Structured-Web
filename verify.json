@@ -18,65 +18,64 @@
   //
   // =============================================================
 
-  
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://osbornventures.com/#website",
-      "url": "https://osbornventures.com",
-      "name": "Osborn Ventures Inc.",
-      "isPartOf": [
+        "@context": "https://schema.org",
+    "@graph": [
         {
-          "@type": "WebSite",
-          "name": "StructuredWeb.org — Canonical Verification",
-          "url": "https://structuredweb.org/verify"
+        "@type": "WebSite",
+        "@id": "https://yourdomain.com/#website",
+        "url": "https://yourdomain.com",
+        "name": "Your Business Name",
+        "isPartOf": [
+            {
+            "@type": "WebSite",
+            "name": "StructuredWeb.org — Canonical Verification",
+            "url": "https://structuredweb.org/verify"
+            },
+            {
+            "@type": "WebSite",
+            "name": "StructuredWeb.org — Mesh Registry",
+            "url": "https://structuredweb.org/mesh"
+            }
+        ]
         },
         {
-          "@type": "WebSite",
-          "name": "StructuredWeb.org — Mesh Registry",
-          "url": "https://structuredweb.org/mesh"
+        "@type": "Organization",
+        "@id": "https://yourdomain.com/verify",
+        "name": "Your Business Name",
+        "url": "https://yourdomain.com",
+        "description": "Verified node in AI-Structured Web v1.7. Provides specialized services for [your audience].",
+        "founder": {
+            "@type": "Person",
+            "name": "Your Founder Name"
+        },
+        "identifier": "AI-Structured-Web-Node-v1.7",
+        "sameAs": [
+            "https://www.facebook.com/yourpage",
+            "https://yourparentcompany.com"
+        ],
+        "mainEntityOfPage": {
+            "@id": "https://yourdomain.com/#website"
+        },
+        "subjectOf": {
+            "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md"
+        },
+        "keywords": [
+            "your keyword one",
+            "your keyword two",
+            "structured web",
+            "zero-trust node",
+            "machine verifiable",
+            "schema-first",
+            "ai-ready",
+            "voice assistant safe"
+        ]
+        },
+        {
+        "@type": "CreativeWork",
+        "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md",
+        "name": "CC BY-NC-ND 4.0 + Structured Web Addendum",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "description": "Use of this verification node requires valid Structured Web participation. Monetized derivatives or repackaging are prohibited without explicit permission."
         }
-      ]
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://osbornventures.com/verify",
-      "name": "Osborn Ventures Inc.",
-      "url": "https://osbornventures.com",
-      "description": "Verified node in AI-Structured Web v1.8. Provides incubation, consulting, and zero-trust schema-first alignment.",
-      "founder": {
-        "@type": "Person",
-        "name": "Dekker Osborn"
-      },
-      "identifier": "AI-Structured-Web-Node-v1.8",
-      "sameAs": [
-        "https://github.com/OsbornVentures",
-        "https://structuredweb.org/verify",
-        "https://www.linkedin.com/company/osbornventures"
-      ],
-      "mainEntityOfPage": {
-        "@id": "https://osbornventures.com/#website"
-      },
-      "subjectOf": {
-        "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md"
-      },
-      "keywords": [
-        "ai-structured web",
-        "structured web",
-        "zero-trust node",
-        "schema-first",
-        "mesh participant",
-        "machine verifiable",
-        "edge-hosted"
-      ]
-    },
-    {
-      "@type": "CreativeWork",
-      "@id": "https://github.com/OsbornVentures/structured-web/blob/main/license.md",
-      "name": "CC BY-NC-ND 4.0 + Structured Web Addendum",
-      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-      "description": "Use of this verification node requires valid Structured Web participation. Monetized derivatives or repackaging are prohibited without explicit permission."
+    ]
     }
-  ]
-}
